@@ -1,0 +1,79 @@
+.HomeSec{
+    display: flex;
+    padding:50px 100px;
+    @media (max-width:950px) {
+        flex-direction: column;
+        padding:30px 50px;
+    }
+    .left{
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width:950px) {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1{
+            font-size: 56px;
+            @media (max-width:950px) {
+                font-size: 40px;
+            }
+            @media (max-width:400px) {
+                font-size: 35px;
+            }
+        }
+        p{
+            font-size: 25px;
+            @media (max-width:950px) {
+                font-size: 20px;
+            }
+            @media (max-width:400px) {
+                font-size: 16px;
+            }
+        }
+        .button{
+            font-size: 25px;
+            padding: 15px 20px;
+            background-color: var(--scolor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-family: var(--fh);
+            border-radius: 5px;
+            &:hover{
+                background-color: black;
+                color: var(--scolor);
+            }
+            @media (max-width:400px) {
+                font-size: 20px;
+                width: 100px;
+            }
+        }
+    }
+    .right{
+        flex: 4;
+        .image{
+            @media (max-width:950px) {
+                height: 400px;
+            }
+            @media (max-width:767px) {
+                height: 300px;
+            }
+            @media (max-width:400px) {
+                height: 250px;
+            }
+            
+            img{
+                @media (max-width:950px) {
+                    object-fit: contain;
+                }
+
+            }
+        }
+    }
+}

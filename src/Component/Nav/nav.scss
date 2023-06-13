@@ -1,10 +1,12 @@
 .Nav {
-  position: absolute;
+  position: fixed;
+  background-color: var(--bg);
+  border-bottom: 1px solid #e6bd6b8c;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   top: 0;
-  height: 80px;
+  height: 100px;
   width: 100%;
   z-index: 9;
   .lang{
@@ -182,7 +184,7 @@
           position: relative;
           top: 0;
           transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-          @media (max-width: 900px) {
+          @media (max-width: 950px) {
             font-size: 4em;
           }
         }

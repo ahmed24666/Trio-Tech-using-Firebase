@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         <>
           <ProgressBar
-            color="#8f0000"
+            color="#D39312"
             height={3}
             direction="right"
             position="top"
@@ -28,6 +28,8 @@ function App() {
             clickables={[
               'a',
               'button',
+              '.button',
+              '.lang',
             ]}
           />
           <Nav />
