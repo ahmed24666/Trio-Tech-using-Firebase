@@ -15,23 +15,23 @@ const Nav = () => {
                     ></span>
                 </div>
                 <div className="lang" style={navOpen?{display:'none'}:{display:'flex'}}>
-                    <MdLanguage/>
+                    <MdLanguage/> Ar
                 </div>
             </div>
             <div className="links">
                 <NavLink to='/' className='big'>
                     <div class={navOpen ? "heading hdc" : 'heading'}>Home</div>
                 </NavLink>
-                <NavLink to='/t' className='big'>
-                    <div class={navOpen ? "heading hdc" : 'heading'}>Service</div>
+                <NavLink to='/' className='big'>
+                    <div class={navOpen ? "heading hdc" : 'heading'}>Portfolio</div>
                 </NavLink>
-                <NavLink to='/t' className='big'>
+                <NavLink to='/plans' className='big'>
                     <div class={navOpen ? "heading hdc" : 'heading'}>Plans</div>
                 </NavLink>
-                <NavLink to='/t' className='big'>
+                <NavLink to='/about' className='big'>
                     <div class={navOpen ? "heading hdc" : 'heading'}>About</div>
                 </NavLink>
-                <NavLink to='/t' className='big'>
+                <NavLink to='/contact' className='big'>
                     <div class={navOpen ? "heading hdc" : 'heading'}>Contact</div>
                 </NavLink>
             </div>
@@ -72,13 +72,13 @@ const Nav = () => {
                             }}
                             className='smallscreen'
                         >
-                            Service
+                            Portfolio
                         </NavLink>
                         <div className="nav-item-wrapper"></div>
                     </li>
                     <li className="nav-item">
                         <NavLink
-                            to="/about"
+                            to="/plans"
                             onClick={() => setNavOpen(!navOpen)}
                             style={{
                                 top: navOpen ? "0" : "120px",
@@ -106,7 +106,7 @@ const Nav = () => {
                     </li>
                     <li className="nav-item">
                         <NavLink
-                            to="/about"
+                            to="/contact"
                             onClick={() => setNavOpen(!navOpen)}
                             style={{
                                 top: navOpen ? "0" : "120px",

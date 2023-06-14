@@ -1,12 +1,14 @@
-.HomeSec{
+.Contact{
     display: flex;
     padding:50px 100px;
+    margin-top: 50px;
     @media (max-width:950px) {
         flex-direction: column;
         padding:30px 50px;
+        margin-top: 130px;
     }
     .left{
-        flex: 5;
+        flex: 4;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -25,14 +27,27 @@
                 font-size: 35px;
             }
         }
-        p{
-            font-size: 25px;
-            @media (max-width:950px) {
-                font-size: 20px;
+        .items{
+            .item{
+                display: flex;
+                font-size: 30px;
+                gap: 30px;
+                letter-spacing: 2px;
+                @media (max-width:500px) {
+                    font-size: 25px;
+                    align-items: center;
+                }
+                .icon{
+                    font-size: 35px;
+                    color: var(--scolor);
+                }
             }
-            @media (max-width:500px) {
-                font-size: 16px;
-            }
+        }
+        .social{
+            display: flex;
+            font-size: 35px;
+            gap: 40px;
+            color: var(--scolor);
         }
         // .button{
         //     font-size: 25px;
@@ -57,7 +72,7 @@
         // }
     }
     .right{
-        flex: 4;
+        flex: 6;
         .image{
             @media (max-width:950px) {
                 height: 400px;

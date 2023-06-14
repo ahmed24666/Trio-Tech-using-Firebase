@@ -6,9 +6,9 @@ const HomeSec = ({margin,p,h1,img,dir}) => {
             <div className="left" style={{direction:'ltr'}}>
                 <h1>{h1}</h1>
                 <p>{p}</p>
-                <div className="button">
+                {/* <div className="button">
                     Start Now
-                </div>
+                </div> */}
             </div>
             <div className="right">
                 <div className="image">

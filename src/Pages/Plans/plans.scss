@@ -1,0 +1,140 @@
+.Plans{
+    margin-top: 100px;
+    .first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .image{
+            height: 700px;
+            img{
+                object-fit: contain;
+            }
+        }
+        .button{
+            margin-top: -40px;
+            font-size: 25px;
+            padding: 15px 20px;
+            background-color: var(--scolor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-family: var(--fh);
+            color: white;
+            &:hover{
+                background-color: black;
+                color: var(--scolor);
+            }
+            @media (max-width:500px) {
+                font-size: 20px;
+                width: 100px;
+            }
+        }
+    }
+    #ppCon{
+        margin-top: 200px;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @media (max-width:1230px) {
+            margin-top: 150px;
+            flex-direction: column;
+            gap: 10px;
+            padding: 100px 30px;
+        }
+        .item2{
+            height: 550px !important;
+            @media (max-width:1230px) {
+                height: auto !important;
+            }
+        }
+        .item{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            text-align: center;
+            @media (max-width:1230px) {
+                gap: 15px;
+                padding: 30px;
+                height: auto;
+            }
+            @media (max-width:767px) {
+                gap: 10px;
+                padding:15px;
+            }
+            h2{
+                font-weight: 600;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+            h1{
+                font-size: 70px;
+                font-weight: 500;
+            }
+            
+            p{
+                font-weight: 300;
+                line-height: 28px;
+                color: #5a5a5a;
+            }
+            
+            .view{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &:hover .icon{
+                    transform: translateX(20px);
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 15px;
+                    letter-spacing: 2px;
+                }
+                .icon{
+                    transition: 0.5s;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        } 
+        .itemCon{
+            flex: 4;
+            border: 1px solid #b3b3b3;
+            @media (max-width:1230px) {
+                width: 80%;
+            }
+            .item{
+                border: 1px solid var(--scolor);
+                margin: 10px;
+            }
+        }   
+        .itemCon2{
+            flex: 5;
+            border: 1px solid var(--mcolor);
+            @media (max-width:1230px) {
+                width: 90%;
+            }
+            .item{
+                border: 1px solid #b3b3b3;
+                padding: 70px 50px;
+                margin: 10px;
+                @media (max-width:767px) {
+                    padding: 30px;
+                }
+            }
+        }   
+    }
+}
