@@ -17,7 +17,7 @@ const Nav = () => {
                         className={navOpen ? "lineBottom spin" : "lineBottom"}
                     ></span>
                 </div>
-                <div className="lang" style={navOpen?{display:'none'}:{display:'flex'}} onClick={()=>{setlang(lang==='en'?'ar':'en');i18n.changeLanguage(lang);}}>
+                <div className="lang" style={navOpen?{display:'none',cursor:'pointer'}:{display:'flex',cursor:'pointer'}} onClick={()=>{setlang(lang==='en'?'ar':'en');i18n.changeLanguage(lang);}}>
                     <MdLanguage/> {lang}
                 </div>
             </div>

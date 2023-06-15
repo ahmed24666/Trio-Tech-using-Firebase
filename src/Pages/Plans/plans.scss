@@ -112,13 +112,19 @@
         } 
         .itemCon{
             flex: 4;
-            border: 1px solid #b3b3b3;
+            border: 1px solid #804a00;
             @media (max-width:1240px) {
                 width: 80%;
             }
             .item{
-                border: 1px solid var(--scolor);
+                border: 1px solid #804a00;
                 margin: 10px;
+            }
+        }
+        .itemCon3{
+            border: 1px solid #71706e;
+            .item{
+                border: 1px solid #71706e;
             }
         }   
         .itemCon2{
@@ -128,7 +134,7 @@
                 width: 90%;
             }
             .item{
-                border: 1px solid #b3b3b3;
+                border: 1px solid var(--mcolor);
                 padding: 70px 50px;
                 margin: 10px;
                 @media (max-width:767px) {

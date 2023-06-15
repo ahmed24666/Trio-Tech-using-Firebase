@@ -1,0 +1,100 @@
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  @keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  .animated-title {
+    color: #222;
+    font-family: var(--fh);
+    height: 90vmin;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 12vmin;
+    padding: 2vmin 0;
+    position: absolute;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: 5px solid #000;
+    top: 0;
+    @media (max-width: 950px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 300px;
+    }
+    @media (max-width: 500px) {
+      width: 250px;
+    }
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 0.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+    @media (max-width: 950px) {
+      font-size: 50px;
+    }
+    @media (max-width: 767px) {
+      font-size: 40px;
+    }
+    @media (max-width: 500px) {
+      font-size: 35px;
+    }
+  }
+  .animated-title > div.text-top div span:first-child {
+    color: var(--mcolor);
+  }
+  // .animated-title > div.text-top div span:nth-child(2) {
+  //   color: var(--scolor);
+  // }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+    // color: var(--scolor);
+    @media (max-width: 950px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 300px;
+    }
+    @media (max-width: 500px) {
+      width: 250px;
+    }
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+    @media (max-width: 950px) {
+      font-size: 50px;
+    }
+    @media (max-width: 767px) {
+      font-size: 40px;
+    }
+    @media (max-width: 500px) {
+      font-size: 35px;
+    }
+  }

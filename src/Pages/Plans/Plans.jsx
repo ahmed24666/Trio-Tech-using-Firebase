@@ -49,7 +49,7 @@ const Plans = () => {
                        </div>
                    </div>
                </div>
-               <div className="itemCon">
+               <div className="itemCon itemCon3">
                <div className="item">
                        <h2 style={lang==='en'?{color:'#71706e',fontSize:'30px',fontWeight:'bolder',letterSpacing:'0'}:{color:'#71706e'}}>{t('silver.1')}</h2>
                        {/* <h1> $300</h1> */}

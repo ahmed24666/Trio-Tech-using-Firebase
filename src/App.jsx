@@ -10,11 +10,24 @@ import Contact from "./Pages/Contact/Contact";
 import Plans from "./Pages/Plans/Plans";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Product from "./Pages/Product/Product";
+import { useLocation } from 'react-router-dom'
+import { useEffect, useState } from "react";
+import Loader from "./Component/Loader/Loader";
+
 function App() {
   const LayOut = () => {
+    const { pathname }=useLocation()
+    const [load, setload] = useState(true)
+    useEffect(() => {
+      setload(true)
+      setTimeout(() => {
+        setload(false)
+      }, 1200);
+    }, [pathname])
     return (
       <div className="app">
-        <>
+        {load?(<Loader/>):(
+          <>
           <ScrollToTop/>
           <ProgressBar
             color="#D39312"
@@ -24,11 +37,11 @@ function App() {
             gradient={true}
             gradientColor="black"
           />
-          <AnimatedCursor
+          {/* <AnimatedCursor
             innerSize={10}
             outerSize={30}
             color='0, 0, 0'
-            outerAlpha={0.2}
+            // outerAlpha={0.2}
             innerScale={1.5}
             outerScale={3}
             clickables={[
@@ -38,10 +51,12 @@ function App() {
               '.lang',
               '.social',
             ]}
-          />
+          /> */}
           <Nav />
           <Outlet />
         </>
+        )}
+        
       </div>
     )
   }
@@ -54,6 +69,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/loader",
+          element: <Loader/>,
         },
         {
           path: "/about",
