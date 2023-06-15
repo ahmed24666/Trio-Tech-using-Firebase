@@ -5,13 +5,16 @@ import { LuPhone } from 'react-icons/lu';
 import { ImWhatsapp } from 'react-icons/im';
 import { FiFacebook } from 'react-icons/fi';
 import { BsInstagram } from 'react-icons/bs';
+import { useMyContext } from '../../context/MyContext';
 
 
 const Contact = () => {
+    const { t ,lang} = useMyContext()
+
     return (
-        <div className='Contact'>
+        <div className='Contact' style={lang==='ar'?{direction:'ltr'}:{direction:'rtl'}}>
             <div className="left">
-                <h1>Contact Us</h1>
+                <h1>{t("contact")}</h1>
                 <div className="items">
                     <div className="item">
                         <div className="icon"><LuMailbox/></div>
@@ -26,7 +29,7 @@ const Contact = () => {
                         01004993015
                     </div>
                 </div>
-                <h1>Follow Us</h1>
+                <h1>{t("follow")}</h1>
                 <div className="social"><FiFacebook/><BsInstagram/></div>
             </div>
             <div className="right">

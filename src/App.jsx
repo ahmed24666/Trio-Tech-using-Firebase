@@ -8,6 +8,8 @@ import About from "./Pages/About/About";
 import ScrollToTop from './Component/ScrollToTop'
 import Contact from "./Pages/Contact/Contact";
 import Plans from "./Pages/Plans/Plans";
+import Portfolio from "./Pages/Portfolio/Portfolio";
+import Product from "./Pages/Product/Product";
 function App() {
   const LayOut = () => {
     return (
@@ -16,7 +18,7 @@ function App() {
           <ScrollToTop/>
           <ProgressBar
             color="#D39312"
-            height={3}
+            height={5}
             direction="right"
             position="top"
             gradient={true}
@@ -64,6 +66,14 @@ function App() {
         {
           path: "/plans",
           element: <Plans/>
+        },
+        {
+          path: "/portfolio",
+          element: <Portfolio/>
+        },
+        {
+          path: "/portfolio/:Id",
+          element: <Product/>
         },
       ]
     },

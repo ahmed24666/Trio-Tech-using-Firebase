@@ -41,7 +41,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        @media (max-width:1230px) {
+        @media (max-width:1240px) {
             margin-top: 150px;
             flex-direction: column;
             gap: 10px;
@@ -49,7 +49,7 @@
         }
         .item2{
             height: 550px !important;
-            @media (max-width:1230px) {
+            @media (max-width:1240px) {
                 height: auto !important;
             }
         }
@@ -62,7 +62,7 @@
             align-items: center;
             padding: 50px;
             text-align: center;
-            @media (max-width:1230px) {
+            @media (max-width:1240px) {
                 gap: 15px;
                 padding: 30px;
                 height: auto;
@@ -113,7 +113,7 @@
         .itemCon{
             flex: 4;
             border: 1px solid #b3b3b3;
-            @media (max-width:1230px) {
+            @media (max-width:1240px) {
                 width: 80%;
             }
             .item{
@@ -124,7 +124,7 @@
         .itemCon2{
             flex: 5;
             border: 1px solid var(--mcolor);
-            @media (max-width:1230px) {
+            @media (max-width:1240px) {
                 width: 90%;
             }
             .item{

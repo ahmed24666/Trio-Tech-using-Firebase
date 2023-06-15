@@ -1,0 +1,48 @@
+{
+  "Nav": {
+    "1": "Home", 
+    "2": "Portfolio", 
+    "3": "Plans", 
+    "4": "About", 
+    "5": "Contact"
+  },
+  "Home": {
+    "1":"Native Mobile App Development",
+    "11": "Elevate your business with our expertly crafted native mobile applications for Android and IOS platforms. Our team of skilled developers ensures top-notch performance, seamless functionality, and a user-friendly experience.",
+    "2": "Responsive Web Design", 
+    "22": "Capture the attention of your audience with a responsive website that adapts flawlessly to any screen size. Our team specializes in creating visually stunning and user-friendly websites that provide an optimal browsing experience across all devices.", 
+    "3": "Powerful Dashboard Solutions",
+    "33": "Gain valuable insights and streamline your operations with our advanced dashboard solutions. Our customized dashboards offer real-time analytics, intuitive data visualization, and efficient tools to empower your decision-making processes.",
+    "4": "UI/UX Design and Optimization",
+    "44": "Enhance user satisfaction and engagement with our exceptional UI/UX design services. We create visually appealing interfaces with intuitive navigation, ensuring a seamless and enjoyable experience for your customers. Let us optimize your systems usability and aesthetics."
+  },
+  "start":"Start Now",
+  "contact":"Contact Us",
+  "follow":"Follow Us",
+  "bronze": {
+    "1":"Bronze plan",
+    "2": "• Basic design of the system", 
+    "3": "• 4-month technical support",
+    "4": "• System's support for only one language "
+  },
+  "silver": {
+    "1":" Silver plan",
+    "2": "• Custom design of the system offers more flexibility and personalization options.", 
+    "3": "• 8-month technical support ",
+    "4": "• Provision of 1 free UI update after the deadline provides some flexibility for refining the user interface.",
+    "5": "• The system's support for both Arabic and English expands its potential user base."
+  },
+  "gold": {
+    "1":" Gold plan",
+    "2": "• Custom design of the system offers more flexibility and personalization options.", 
+    "3": "• 1 year technical support ",
+    "4": "• Provision of 2 free UI update after the deadline provides some flexibility for refining the user interface.",
+    "5": "• System's support for both Arabic and English expands its potential user base.",
+    "6": "• Support for light and dark mode adds an additional user preference option."
+  },
+  "about": {
+    "1":"About Trio",
+    "2": "We are a software team specializing in Android, iOS, and web platforms. Our role is to develop, maintain, and support software systems, empowering businesses with effective technology solutions. We prioritize creating captivating applications that optimize performance and usability. Our dedicated team ensures regular updates, bug fixes, and improvements to keep software running smoothly. We provide comprehensive support, addressing concerns promptly. Our goal is to empower businesses to thrive in the digital landscape."
+  }
+
+}
