@@ -60,7 +60,7 @@ function App() {
           /> */}
           <Nav />
           <div className="whatapp" style={lang==='en'?{bottom:'30px',right:'30px'}:{bottom:'30px',left:'30px'}}>
-            <a href="https://wa.me/01004993015" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/+201004993015" target="_blank" rel="noreferrer">
               <ImWhatsapp/>
             </a>
           </div>
