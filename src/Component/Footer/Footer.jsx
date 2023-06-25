@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="item">
                 <div className="icon-1"><ImWhatsapp /></div>
                 <div className="phone-link">
-                    <a href="tel:01004993015">01004993015</a>
+                    <a href="tel:+201004993015">01004993015</a>
                 </div>
             </div>
         </div>
