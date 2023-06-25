@@ -13,9 +13,15 @@ import Product from "./Pages/Product/Product";
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import Loader from "./Component/Loader/Loader";
+import Footer from "./Component/Footer/Footer";
+import { ImWhatsapp } from 'react-icons/im';
+import { useMyContext } from "./context/MyContext";
 
 function App() {
+
   const LayOut = () => {
+    const { lang} = useMyContext()
+
     const { pathname }=useLocation()
     const [load, setload] = useState(true)
     useEffect(() => {
@@ -53,7 +59,13 @@ function App() {
             ]}
           /> */}
           <Nav />
+          <div className="whatapp" style={lang==='en'?{bottom:'30px',right:'30px'}:{bottom:'30px',left:'30px'}}>
+            <a href="https://wa.me/01004993015" target="_blank" rel="noreferrer">
+              <ImWhatsapp/>
+            </a>
+          </div>
           <Outlet />
+          <Footer/>
         </>
         )}
         

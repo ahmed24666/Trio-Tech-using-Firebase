@@ -1,0 +1,25 @@
+.Footer{
+    height: 150px;
+    padding: 0px 50px;
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
+    @media (max-width:950px) {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 0;
+    }
+    .icon{
+        cursor: pointer;
+    }
+    .icon ,.icon-1{
+        color: var(--scolor);
+    }
+    .item{
+        display: flex;
+        gap: 30px;
+    }
+}

@@ -28,6 +28,14 @@
       align-items: center;
       flex-direction: column;
       gap: 20px;
+      .image{
+        max-height: 250px;
+        @media (min-width:768px) {
+          img{
+            object-fit: contain;
+          }
+        }
+      }
     }
   }
 }
