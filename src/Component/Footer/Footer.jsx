@@ -8,18 +8,20 @@ import { BsInstagram } from 'react-icons/bs';
 const Footer = () => {
     return (
         <div className='Footer'>
-            <div className="icon">
-                <div className="insta-icon-link">
-                    <a href="https://www.instagram.com/trio.com.bd/">
-                        <BsInstagram />
-                    </a>
+            <div className="icons">
+                <div className="icon">
+                    <div className="insta-icon-link">
+                        <a href="https://www.instagram.com/triiotech/?igshid=ZDc4ODBmNjlmNQ%3D%3D">
+                            <BsInstagram />
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className="icon">
-                <div className="facebook-icon-link">
-                    <a href="https://www.facebook.com/trio.com.bd/">
-                        <FiFacebook />
-                    </a>
+                <div className="icon">
+                    <div className="facebook-icon-link">
+                        <a href="https://www.facebook.com/people/Trio-Tech/100091921705452/?mibextid=ZbWKwL">
+                            <FiFacebook />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="item">
@@ -29,7 +31,7 @@ const Footer = () => {
             <div className="item">
                 <div className="icon-1"><LuPhone /></div>
                 <div className="phone-link">
-                    <a href="tel:01019326050">01019326050</a>
+                    <a href="tel:+201019326050">01019326050</a>
                 </div>
             </div>
             <div className="item">

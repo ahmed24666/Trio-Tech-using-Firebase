@@ -31,10 +31,10 @@ const Contact = () => {
                 </div>
                 <h1>{t("follow")}</h1>
                 <div className="social">
-                    <a href="https://www.instagram.com/trio.com.bd/">
+                    <a href="https://www.instagram.com/triiotech/?igshid=ZDc4ODBmNjlmNQ%3D%3D">
                         <BsInstagram />
                     </a>
-                    <a href="https://www.facebook.com/trio.com.bd/">
+                    <a href="https://www.facebook.com/people/Trio-Tech/100091921705452/?mibextid=ZbWKwL">
                         <FiFacebook />
                     </a>
                 </div>

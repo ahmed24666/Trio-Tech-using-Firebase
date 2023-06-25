@@ -3,8 +3,10 @@ import { useParams } from 'react-router-dom'
 import "./product.scss";
 import { db } from '../../firebase.config';
 import { doc, getDoc } from 'firebase/firestore';
+import { useMyContext } from '../../context/MyContext';
 
 const Product = () => {
+  const { lang } = useMyContext()
   const { Id } = useParams()
   const [product, setproduct] = useState({})
   const [loading, setloading] = useState(false)
@@ -34,7 +36,7 @@ const Product = () => {
   }, [])
 
   return (
-    <div className='Products'>
+    <div className='Products' style={lang === 'ar' ? { direction: 'ltr' } : { direction: 'rtl' }}>
       {loading ?
       <div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'calc(100vh - 400px)'}}>
 
@@ -45,8 +47,8 @@ const Product = () => {
         <div className="slider">
           <div className="big">
             <div className="text">
-              <h1>{product.Name}</h1>
-              <p>{product.desc}</p>
+              <h1>{lang==='ar'?product.Name:product.arName}</h1>
+              <p>{lang==='ar'?product.desc:product.arDesc}</p>
             </div>
             <div className="imageB">
               <img src={pic} alt="" />
