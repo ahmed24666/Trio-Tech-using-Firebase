@@ -37,8 +37,10 @@
             }
         }
       .imageB {
-        width: 700px;
+        width: 500px;
+        margin: auto;
         @media (max-width: 1050px) {
+            max-width: 500px;
             width: auto;
         }
       }
@@ -46,14 +48,18 @@
     .small {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      margin: auto;
       grid-column-gap: 10px;
       grid-row-gap: 10px;
       @media (max-width: 767px) {
         grid-template-columns: repeat(2, 1fr);
       }
       .imageS{
-          max-height: 200px;
+          max-height: 250px;
           cursor: pointer;
+          img{
+            object-fit: contain;
+          }
       }
     }
   }

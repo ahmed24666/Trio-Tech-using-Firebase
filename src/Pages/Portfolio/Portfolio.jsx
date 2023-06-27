@@ -23,20 +23,24 @@ const Portfolio = () => {
             <div className="head">
                 <h1>{t("previous.1")}</h1>
             </div>
-            <div className="container">
+            <div className={loading?"":"container"}>
                 {loading ? <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'calc(100vh - 400px)' }}>
 
                     <div class="loader2"></div>
-                </div> : products.map((item) => {
+                </div> 
+                :
+                 products.map((item) => {
                     return (
-                        <Link to={`/portfolio/${item.id}`}>
-                            <div className='project' key={item.id}>
-                                <div className="image">
-                                    <img src={item.imgMain} alt="" />
+                        <div>
+                            <Link to={`/portfolio/${item.id}`}>
+                                <div className='project' key={item.id}>
+                                    <div className="image">
+                                        <img src={item.imgMain} alt="" />
+                                    </div>
+                                    <h2 style={{textAlign:'center'}}>{lang==='ar'?item.Name:item.arName}</h2>
                                 </div>
-                                <h2 style={{textAlign:'center'}}>{lang==='ar'?item.Name:item.arName}</h2>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     )
                 })}
 

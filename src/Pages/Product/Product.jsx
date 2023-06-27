@@ -18,7 +18,6 @@ const Product = () => {
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
-        console.log("Document data:", docSnap.data());
         setproduct(docSnap.data())
         setpic(docSnap.data().img2)
         setTimeout(() => {
@@ -26,7 +25,6 @@ const Product = () => {
           setloading(false)
         }, 1500);
       } else {
-        console.log("No such document!");
         setloading(false)
       }
 
@@ -54,19 +52,28 @@ const Product = () => {
               <img src={pic} alt="" />
             </div>
           </div>
-          <div className="small">
+          <div className="small" style={product.img4?{gridTemplateColumns:'repeat(4, 1fr)'}:{gridTemplateColumns:'repeat(3, 1fr)'}}>
+
             <div className="imageS" >
               <img src={product.img2} alt="" onClick={(e) => setpic(e.target.src)} />
             </div>
             <div className="imageS">
               <img src={product.img3} alt="" onClick={(e) => setpic(e.target.src)} />
             </div>
-            <div className="imageS">
-              <img src={product.img4} alt="" onClick={(e) => setpic(e.target.src)} />
-            </div>
-            <div className="imageS">
-              <img src={product.img5} alt="" onClick={(e) => setpic(e.target.src)} />
-            </div>
+            {
+              product.img4&&(
+              <div className="imageS">
+                <img src={product.img4} alt="" onClick={(e) => setpic(e.target.src)} />
+              </div>
+              )
+            }
+            {
+              product.img5&&(
+              <div className="imageS">
+                <img src={product.img5} alt="" onClick={(e) => setpic(e.target.src)} />
+              </div>
+              )
+            }
           </div>
         </div>
       }
