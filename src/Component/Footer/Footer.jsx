@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <div className="item">
                 <div className="icon-1"><LuMailbox /></div>
-                info@trio.com
+                trioteech@gmail.com
             </div>
             <div className="item">
                 <div className="icon-1"><LuPhone /></div>

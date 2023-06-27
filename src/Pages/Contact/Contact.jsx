@@ -18,7 +18,7 @@ const Contact = () => {
                 <div className="items">
                     <div className="item">
                         <div className="icon"><LuMailbox /></div>
-                        info@trio.com
+                        trioteech@gmail.com
                     </div>
                     <div className="item">
                         <div className="icon"><LuPhone /></div>
