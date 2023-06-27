@@ -28,14 +28,21 @@
             }
         }
         .items{
+            @media (max-width:950px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             .item{
                 display: flex;
                 font-size: 30px;
-                gap: 30px;
+                gap: 15px;
                 letter-spacing: 2px;
                 @media (max-width:500px) {
                     font-size: 25px;
                     align-items: center;
+
                 }
                 .icon{
                     font-size: 35px;
