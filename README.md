@@ -1,4 +1,4 @@
-# Trio Tech ( using Firebae )
+# Trio Tech ( using Firebase )
 
 A tech company website built using Firebase and supports multiple languages. It is designed to be fully responsive.
 
